@@ -131,13 +131,13 @@ public class Converter {
 
     public static List<String> Operar(List<String> numeros) {
 
-        Stack<Double> pila = new Stack<>();
+        Stack<Double> Operando = new Stack<>();
         List<String> Guardar = new ArrayList<>();
 
         for (String token : numeros) {
             if (isOperator(token)) {  // Si es un operador
-                double segundoOperando = pila.pop();
-                double primerOperando = pila.pop();
+                double segundoOperando = Operando.pop();
+                double primerOperando = Operando.pop();
                 double resultado = 0;
 
                 switch (token) {
@@ -159,13 +159,13 @@ public class Converter {
                     default:
                         throw new IllegalArgumentException("Operador no válido: " + token);
                 }
-                pila.push(resultado);  // Almacena el resultado en la pila
+                Operando.push(resultado);  // Almacena el resultado en la pila
             } else {  // Si es un número
-                pila.push(Double.parseDouble(token));
+                Operando.push(Double.parseDouble(token));
             }
         }
 
-        Guardar.add(Double.toString(pila.pop()));  // El último valor en la pila es el resultado final
+        Guardar.add(Double.toString(Operando.pop()));  // El último valor en la pila es el resultado final
         return Guardar;
     }
 
