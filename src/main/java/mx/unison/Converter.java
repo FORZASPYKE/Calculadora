@@ -11,7 +11,7 @@ public class Converter {
         Scanner keyb = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Introduce una expresiÃ³n en notacion infija");
+            System.out.println("Introduce una expresion en notacion infija");
             System.out.print("> ");
             inputString = keyb.nextLine();
             if (inputString.equals("quit") || inputString.equals("QUIT")) {
@@ -25,14 +25,19 @@ public class Converter {
             List<String> postfix = Converter.toPostfix(tokens);
             System.out.println(postfix.size());
             System.out.println(postfix);
+            System.out.println(Converter.Operar(postfix));
+
+
 
         }
     }
 
     public static boolean isOperator(String token) {
-        return token.equals("+") || token.equals("-") ||
-                token.equals("*") || token.equals("/") || token.equals("^");
+        if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/") || token.equals("^")){
 
+            return true;
+        }
+        return false;
     }
 
     public static ArrayList<String> toPostfix(List<String> tokens) {
@@ -90,8 +95,7 @@ public class Converter {
 
     public static List<String> getTokens(String input) {
 
-        StringTokenizer st = new StringTokenizer(input," ()+-*/^",
-                                            true);
+        StringTokenizer st = new StringTokenizer(input," ()+-*/^", true);
 
         ArrayList<String> tokenList = new ArrayList<>();
        while (st.hasMoreTokens()) {
@@ -124,4 +128,47 @@ public class Converter {
 
         return rank;
     }
+
+    public static List<String> Operar(List<String> numeros) {
+
+        Stack<Double> pila = new Stack<>();
+        List<String> Guardar = new ArrayList<>();
+
+        for (String token : numeros) {
+            if (isOperator(token)) {  // Si es un operador
+                double segundoOperando = pila.pop();
+                double primerOperando = pila.pop();
+                double resultado = 0;
+
+                switch (token) {
+                    case "+":
+                        resultado = primerOperando + segundoOperando;
+                        break;
+                    case "-":
+                        resultado = primerOperando - segundoOperando;
+                        break;
+                    case "*":
+                        resultado = primerOperando * segundoOperando;
+                        break;
+                    case "/":
+                        resultado = primerOperando / segundoOperando;
+                        break;
+                    case "^":
+                        resultado = Math.pow(primerOperando, segundoOperando);
+                        break;
+                    default:
+                        throw new IllegalArgumentException("Operador no válido: " + token);
+                }
+                pila.push(resultado);  // Almacena el resultado en la pila
+            } else {  // Si es un número
+                pila.push(Double.parseDouble(token));
+            }
+        }
+
+        Guardar.add(Double.toString(pila.pop()));  // El último valor en la pila es el resultado final
+        return Guardar;
+    }
+
 }
+
+
