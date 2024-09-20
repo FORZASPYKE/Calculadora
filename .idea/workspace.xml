@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ad3a362-4dee-40ea-a0a4-785c766b87cf" name="Changes" comment="">
+    <list default="true" id="5ad3a362-4dee-40ea-a0a4-785c766b87cf" name="Changes" comment="Se actualiza el codigo">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/mx/unison/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/mx/unison/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Converter.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Converter.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mx/unison/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/unison/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/unison/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/unison/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +34,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/rene-navarro/postfijas.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/FORZASPYKE/Calculadora.git&quot;,
     &quot;accountId&quot;: &quot;abc0e685-b53b-4f37-95b3-b3138cfa0db1&quot;
   }
 }</component>
@@ -76,8 +86,28 @@
       <updated>1726701045132</updated>
       <workItem from="1726701046202" duration="134000" />
       <workItem from="1726701191046" duration="7045000" />
-      <workItem from="1726715561693" duration="4006000" />
+      <workItem from="1726715561693" duration="4230000" />
+      <workItem from="1726787341400" duration="1095000" />
+      <workItem from="1726801758196" duration="12000" />
+      <workItem from="1726873798415" duration="1452000" />
     </task>
+    <task id="LOCAL-00001" summary="Se agrega la clase Converter la cual Funje como la conversora de notaciones infijas a postfijas y realiza las operaciones solicitadas">
+      <option name="closed" value="true" />
+      <created>1726728544797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726728544797</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se actualiza el codigo">
+      <option name="closed" value="true" />
+      <created>1726728662796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726728662796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,5 +123,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se agrega la clase Converter la cual Funje como la conversora de notaciones infijas a postfijas y realiza las operaciones solicitadas" />
+    <MESSAGE value="Se actualiza el codigo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza el codigo" />
   </component>
 </project>

@@ -134,13 +134,14 @@ public class Converter {
         Stack<Double> Operando = new Stack<>();
         List<String> Guardar = new ArrayList<>();
 
-        for (String token : numeros) {
-            if (isOperator(token)) {  // Si es un operador
+        for (String temp : numeros) {
+            System.out.println("Seguimiento-->" + temp);
+            if (isOperator(temp)) {  // Si es un operador
                 double segundoOperando = Operando.pop();
                 double primerOperando = Operando.pop();
                 double resultado = 0;
 
-                switch (token) {
+                switch (temp) {
                     case "+":
                         resultado = primerOperando + segundoOperando;
                         break;
@@ -157,11 +158,11 @@ public class Converter {
                         resultado = Math.pow(primerOperando, segundoOperando);
                         break;
                     default:
-                        throw new IllegalArgumentException("Operador no válido: " + token);
+                        throw new IllegalArgumentException("Operador no válido: " + temp);
                 }
                 Operando.push(resultado);  // Almacena el resultado en la pila
             } else {  // Si es un número
-                Operando.push(Double.parseDouble(token));
+                Operando.push(Double.parseDouble(temp));
             }
         }
 
